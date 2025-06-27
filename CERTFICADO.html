@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificado de Conclusão - Impressão</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: white;
+    }
+
+    .certificate {
+      width: 100%;
+      max-width: 29.7cm;
+      height: 21cm;
+      padding: 2cm;
+      margin: auto;
+      box-sizing: border-box;
+      border: 6px solid #2c3e50;
+      border-radius: 12px;
+      page-break-after: always;
+    }
+
+    .header, .recipient-section, .course-info, .footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .company-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #2c3e50;
+      text-transform: uppercase;
+    }
+
+    .certificate-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+
+    .recipient-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding: 6px 20px;
+    }
+
+    .course-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin: 10px 0;
+    }
+
+    .modules-grid {
+      font-size: 14px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      margin: 10px 0;
+    }
+
+    .module-item {
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .duration {
+      font-size: 16px;
+      color: #27ae60;
+      margin-top: 10px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+
+    .signature-line {
+      border-top: 1px solid #000;
+      width: 200px;
+      margin: 0 auto 5px;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      .certificate {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate">
+    <div class="header">
+      <div class="company-name">IRA SERVIÇOS E COMÉRCIO DE INFORMÁTICA LTDA</div>
+      <div class="certificate-title">CERTIFICADO DE CONCLUSÃO</div>
+    </div>
+
+    <div class="recipient-section">
+      <p>Certificamos que</p>
+      <div class="recipient-name">LÁILA EMANNUELA SOUZA RAZONI</div>
+      <p>concluiu com êxito o curso de</p>
+      <div class="course-name">INFORMÁTICA PARA DOCÊNCIA</div>
+    </div>
+
+    <div class="course-info">
+      <strong>Módulos Desenvolvidos:</strong>
+      <div class="modules-grid">
+        <div class="module-item">📚 Tecnologias Educacionais</div>
+        <div class="module-item">💻 Ferramentas de Produtividade</div>
+        <div class="module-item">🌐 Recursos Digitais para Ensino</div>
+        <div class="module-item">📊 Planilhas Eletrônicas</div>
+        <div class="module-item">📝 Editores de Texto</div>
+        <div class="module-item">🎨 Apresentações Digitais</div>
+        <div class="module-item">🔍 Avaliações Online</div>
+        <div class="module-item">📱 Ensino a Distância</div>
+        <div class="module-item">🎥 Conteúdo Digital</div>
+        <div class="module-item">🔐 Segurança Digital</div>
+      </div>
+      <div class="duration">Carga Horária: 40 horas/aula</div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <p>Data: ____/____/2025</p>
+        <p>Local: _____________________</p>
+      </div>
+      <div>
+        <div class="signature-line"></div>
+        <p>Coordenação Pedagógica</p>
+        <p>IRA Serviços de Informática</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
