@@ -1,3 +1,13 @@
+body{
+/* Define uma largura máxima para o conteúdo. Por exemplo, 1200px */
+    max-width: 1300px; 
+    /* Centraliza o conteúdo na página */
+    margin: 0 auto; 
+    /* Adiciona um pouco de padding nas laterais para telas menores */
+    padding: 0 20px; p
+}
+
+
 *{
     margin: 0px;
     font-family: 'inter';
@@ -71,10 +81,14 @@
   font-size: 25;
  }
  
- #div-cards{
-  display: grid;
-  grid-auto-flow: column;
- }
+ #div-cards {
+    display: grid;
+    grid-auto-flow: column;
+    /* Adicione esta linha para centralizar verticalmente os itens */
+    align-items: center; 
+    /* Adicione justify-content para espaçar os itens se precisar */
+    justify-content: space-between; /* ou center, space-around, etc. */
+}
 
  .card{
   margin-left: 5px;
@@ -83,6 +97,7 @@
 
 #seta-esquerda{
   display: none;
+  
 
 }
 
